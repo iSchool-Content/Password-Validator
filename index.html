@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Validator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚀 Password Validator</h1>
+      <p>Ready to test your password skills?</p>
+      <button
+        onclick="
+          let password = prompt('Enter your password:');
+          if (password === null || password === '') {
+            alert('❌ Oops, you forgot to enter a password!');
+          } else if (password.length < 6) {
+            alert('❌ Your password is too short. Try at least 6 characters.');
+          } else {
+            alert('🎉 Great! Your password is valid.');
+          }
+        "
+      >
+        Check My Password
+      </button>
+    </div>
+  </body>
+</html>
